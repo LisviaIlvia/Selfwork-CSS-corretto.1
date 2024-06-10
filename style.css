@@ -1,0 +1,200 @@
+ body {
+    margin: 0%;
+} 
+nav {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 10%;
+}
+
+.img-logo {
+    width: 80%;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.link {
+    
+    text-decoration: none;
+    color: black;
+    margin-right: 5%;
+}
+
+.btn {
+    background-color: gold;
+    cursor: pointer;
+}
+
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+header {
+    background-image: url('./img/yellow2.jpg');
+    background-position: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 80vw;
+   
+
+}
+
+.sidebar {
+    background-color: gold;
+    width: 16%;
+    padding-left: 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.art {
+    min-height: 30%;
+    width: 30%;
+    background-color: rgb(239, 236, 236);
+    border: 2px solid rgb(239, 236, 236);
+    border-radius: 2%;
+
+}
+
+.art :hover {
+    background-color: rgb(142, 231, 142);
+}
+
+.img-art {
+    max-width: 100%;
+    height: auto;
+}
+
+.montserrat-font1,
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-font2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(83, 81, 81);
+}
+
+.link :hover {
+    border-bottom: 2px solid gold;
+}
+
+button {
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    background-color:  rgb(83, 81, 81);;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    color: white;
+    margin-top: 100px;
+}
+.torna-su {
+    width: 50px;
+    height: 50px;
+    animation-name: icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    z-index: 5;
+    position: fixed;
+    right: 2%;
+    bottom: 6%
+    
+    
+    
+}
+
+@keyframes icon {
+    0% {
+        transform: translateY(50px);
+    }
+   
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+   
+    .logo {
+        width: 20%;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .img-logo {
+        width: 100%;
+    }
+    .link {
+        font-size: 10px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    section {
+        display: block ;
+        width: 100%;
+    }
+    .art {
+        width: 100%;
+        border: 0px;
+        border-radius: 0px;
+        margin: 60px 0px;
+    }
+    main{
+        display: block;
+    }
+    .sidebar{
+        width: 99.5%;
+        display: block;
+    }
+    footer{
+        display: block;
+    }
+    .torna-su {
+        width: 30px;
+        height: 30px;
+        right: 0px;
+
+    }
+
+}
